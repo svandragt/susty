@@ -165,3 +165,8 @@ function susty_dequeue_dashicons() {
 		wp_deregister_style( 'dashicons' );
 	}
 }
+
+function favicon() {
+	echo '<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />';
+}
+add_action('wp_head', 'favicon');
